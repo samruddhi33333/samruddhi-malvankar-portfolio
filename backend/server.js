@@ -7,7 +7,14 @@ const Contact = require('./models/Contact');
 dotenv.config();
 
 const app = express();
-app.use(cors());
+
+// ✅ Allow frontend on Vercel to access this backend
+app.use(cors({
+  origin: 'https://samruddhi-malvankar-portfolio.vercel.app',
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
+
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
