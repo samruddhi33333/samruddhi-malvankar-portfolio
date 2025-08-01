@@ -1,0 +1,97 @@
+.hero {
+  padding: 100px 20px;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg, #00b4ff, #008cff, #00b4ff);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 2s linear infinite;
+  font-weight: bold;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #00b4ff;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0094e5;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid #00b4ff;
+  color: #00b4ff;
+}
+
+.btn.secondary:hover {
+  background-color: #00b4ff;
+  color: black;
+}
+
+/* 🔵 New Social Icon Styles */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 2.8rem;
+  color: #00b4ff;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #0094e5;
+  transform: scale(1.2);
+}

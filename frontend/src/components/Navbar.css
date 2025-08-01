@@ -1,0 +1,74 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #0f172a; /* Dark navy blue */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Branding text */
+.logo {
+  color: #38bdf8; /* Light blue */
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  margin-right: 40px; /* Space between logo and nav items */
+}
+
+/* Navigation list */
+ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+/* Navigation links */
+ul li a {
+  text-decoration: none;
+  color: #e2e8f0; /* Light gray */
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+ul li a:hover {
+  color: #38bdf8;
+  border-bottom: 2px solid #38bdf8;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  ul li a {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+}
