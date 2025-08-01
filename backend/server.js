@@ -10,7 +10,7 @@ const app = express();
 
 // ✅ Allow frontend on Vercel to access this backend
 app.use(cors({
-  origin: 'https://samruddhi-malvankar-portfolio.onrender.com',
+  origin: 'https://samruddhi-malvankar-portfolio-1.onrender.com',
   methods: ['GET', 'POST'],
   credentials: true
 }));
