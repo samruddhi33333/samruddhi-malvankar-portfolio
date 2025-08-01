@@ -37,32 +37,7 @@ function Projects() {
           </ul>
         </li>
 
-        <li className="project-item">
-          <strong>Smart Contact Manager</strong> <br />
-          <em>Spring Boot, Thymeleaf, MySQL</em><br />
-          <ul>
-            <li>CRUD-enabled contact management system.</li>
-            <li>Includes authentication, email, themes, and dashboard features.</li>
-          </ul>
-        </li>
 
-        <li className="project-item">
-          <strong>Real-Time Chat App</strong> <br />
-          <em>React, Node.js, Socket.IO</em><br />
-          <ul>
-            <li>WhatsApp-style chat UI with real-time messaging.</li>
-            <li>Built using WebSockets and REST API integration.</li>
-          </ul>
-        </li>
-
-        <li className="project-item">
-          <strong>Travel Booking System</strong> <br />
-          <em>MERN Stack + GraphQL</em><br />
-          <ul>
-            <li>Allows users to search and book trips with authentication.</li>
-            <li>Uses Apollo Client and GraphQL for seamless data fetching.</li>
-          </ul>
-        </li>
 
         
       </ul>
